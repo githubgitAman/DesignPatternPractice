@@ -1,19 +1,29 @@
 package Creational.Singleton;
 
+import java.util.concurrent.locks.ReentrantLock;
+
 public class SingletonClass {
     private int age;
     private String firstName;
     private String lastName;
 
     //Instance of class
-//    private SingletonClass singletonClassInstance = null;
+    private static SingletonClass singletonClassInstance = null;
     //Making constructor private
-    private SingletonClass() {
-
-    }
+    private SingletonClass() {}
+    //Applying lock
+    private static ReentrantLock lock = new ReentrantLock();
     //Creating method to getInstance
-    public static SingletonClass getInstance() {
-        return new SingletonClass();
+    public static  SingletonClass getInstance() {
+        if (singletonClassInstance == null) {
+            lock.lock();
+            if(singletonClassInstance == null)
+            {
+                singletonClassInstance = new SingletonClass();
+            }
+            lock.unlock();
+        }
+        return singletonClassInstance;
     }
 
     public int getAge() {
