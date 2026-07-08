@@ -8,6 +8,9 @@ public class BuilderClassHelper {
     public BuilderClassHelper() {
     }
 
+    public BuilderClass build() {
+        return new BuilderClass(this);
+    }
     public String getFirstName() {
         return firstName;
     }

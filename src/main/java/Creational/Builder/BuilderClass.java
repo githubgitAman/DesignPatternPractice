@@ -11,6 +11,10 @@ public class BuilderClass {
         this.age = builderClassHelper.getAge();
     }
 
+    public static BuilderClassHelper getBuilder(){
+        return new BuilderClassHelper();
+    }
+
     public String getFirstName() {
         return firstName;
     }
