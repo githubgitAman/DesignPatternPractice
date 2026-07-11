@@ -1,7 +1,4 @@
-package Creational.Factory;
-
-import Creational.Factory.Components.AndroidButton;
-import Creational.Factory.Components.Button;
+package Creational.Factory.FlutterExample.Components;
 
 public class ANDROIDFlutterFactory implements FlutterFactory {
     @Override

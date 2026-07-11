@@ -1,4 +1,4 @@
-package Creational.Factory;
+package Creational.Factory.FlutterExample.Components;
 
 public enum PLATFORM {
     IOS,

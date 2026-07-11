@@ -1,4 +1,4 @@
-package Creational.Factory;
+package Creational.Factory.FlutterExample.Components;
 
 public class FlutterFactoryFactory {
     public static FlutterFactory getFlutterFactory(PLATFORM platform) {

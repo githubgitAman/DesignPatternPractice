@@ -1,7 +1,4 @@
-package Creational.Factory;
-
-import Creational.Factory.Components.Button;
-import Creational.Factory.Components.IOSButton;
+package Creational.Factory.FlutterExample.Components;
 
 public class IOSFlutterFactory implements FlutterFactory {
     @Override

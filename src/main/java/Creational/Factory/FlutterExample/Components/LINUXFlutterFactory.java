@@ -1,7 +1,4 @@
-package Creational.Factory;
-
-import Creational.Factory.Components.Button;
-import Creational.Factory.Components.LinuxButton;
+package Creational.Factory.FlutterExample.Components;
 
 public class LINUXFlutterFactory implements FlutterFactory {
     @Override

@@ -1,9 +1,4 @@
-package Creational.Factory;
-
-import Creational.Factory.Components.AndroidButton;
-import Creational.Factory.Components.Button;
-import Creational.Factory.Components.IOSButton;
-import Creational.Factory.Components.LinuxButton;
+package Creational.Factory.FlutterExample.Components;
 
 public class Flutter {
     public void refresh(){

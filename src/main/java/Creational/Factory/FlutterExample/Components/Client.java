@@ -1,6 +1,4 @@
-package Creational.Factory;
-
-import Creational.Factory.Components.Button;
+package Creational.Factory.FlutterExample.Components;
 
 public class Client {
     public static void main(String[] args) {

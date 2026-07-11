@@ -1,6 +1,4 @@
-package Creational.Factory;
-
-import Creational.Factory.Components.Button;
+package Creational.Factory.FlutterExample.Components;
 
 //Factory Class for factory methods
 public interface FlutterFactory {
