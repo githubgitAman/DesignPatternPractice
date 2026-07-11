@@ -9,15 +9,16 @@ public class Flutter {
     public void refresh(){
         System.out.println("Flutter refresh");
     }
-    public Button buttonType(PLATFORM platform){
-        if(platform.equals(PLATFORM.ANDROID)){
-            return new AndroidButton();
+    //Method to call factory method
+    public FlutterFactory getFlutterFactory(PLATFORM platform){
+        if(platform == PLATFORM.ANDROID){
+            return new ANDROIDFlutterFactory();
         }
-        else if(platform.equals(PLATFORM.IOS)){
-            return new IOSButton();
+        else if(platform == PLATFORM.IOS){
+            return new IOSFlutterFactory();
         }
-        else if(platform.equals(PLATFORM.LINUX)){
-            return new LinuxButton();
+        else if(platform == PLATFORM.LINUX){
+            return new LINUXFlutterFactory();
         }
 
         throw new IllegalArgumentException("Unsupported platform");

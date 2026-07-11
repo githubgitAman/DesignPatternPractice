@@ -5,8 +5,10 @@ import Creational.Factory.Components.Button;
 public class Client {
     public static void main(String[] args) {
         Flutter flutter = new Flutter();
-        Button createdButton = flutter.buttonType(PLATFORM.ANDROID);
+        FlutterFactory factoryObject = flutter.getFlutterFactory(PLATFORM.IOS);
 
-        System.out.println(createdButton);
+        Button buttonObject = factoryObject.buttonType();
+
+        System.out.println(buttonObject);
     }
 }
