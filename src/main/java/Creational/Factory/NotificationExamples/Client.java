@@ -2,8 +2,8 @@ package Creational.Factory.NotificationExamples;
 
 public class Client {
     public static void main(String[] args) {
-        E_Commerce commerce = new E_Commerce();
-        Notification notificationObject = commerce.getNotificationFactory(NOTIFICATIONTYPE.PHONE);
-        System.out.println(notificationObject.notificationMessage());
+        NotificationFactory notificationFactoryObject = new MessageNotificationFactory();
+        Notification notificationMessage = notificationFactoryObject.createNotification();
+        System.out.println(notificationMessage);
     }
 }
