@@ -8,11 +8,12 @@ public class IntelligentStudent extends Student {
     }
     //Parameterized Constructor
     public IntelligentStudent(IntelligentStudent student) {
-        //Copying parent attributes
+//      Copying parent attributes
         super(student);
         if(student != null) {
             this.iq = student.getIq();
         }
+
     }
 
     @Override

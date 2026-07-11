@@ -1,6 +1,6 @@
 package Creational.Prototype;
 
-public class Student {
+public class Student implements Prototype<Student> {
     private String firstName;
     private String lastName;
     private int age;
@@ -16,6 +16,8 @@ public class Student {
         this.setFirstName(student.getFirstName());
         this.setLastName(student.getLastName());
         this.setAge(student.getAge());
+        this.setAvgBatchPSP(student.getAvgBatchPSP());
+        this.setBatch(student.getBatch());
     }
 
     //Copy method to create copy of object
