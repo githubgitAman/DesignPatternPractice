@@ -11,16 +11,7 @@ public class Flutter {
     }
     //Method to call factory method
     public FlutterFactory getFlutterFactory(PLATFORM platform){
-        if(platform == PLATFORM.ANDROID){
-            return new ANDROIDFlutterFactory();
-        }
-        else if(platform == PLATFORM.IOS){
-            return new IOSFlutterFactory();
-        }
-        else if(platform == PLATFORM.LINUX){
-            return new LINUXFlutterFactory();
-        }
-
-        throw new IllegalArgumentException("Unsupported platform");
+        //Hiding implementation using Practical Factory
+        return FlutterFactoryFactory.getFlutterFactory(platform);
     }
 }
