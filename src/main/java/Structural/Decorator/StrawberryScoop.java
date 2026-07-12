@@ -1,13 +1,19 @@
 package Structural.Decorator;
 
 public class StrawberryScoop implements IceCream {
+    //We cannot allow ice_cream without Cone
+    private final IceCream iceCream;
+    public StrawberryScoop(IceCream iceCream) {
+        this.iceCream = iceCream;
+    }
+
     @Override
     public double getCost() {
-        return 3.0;
+        return iceCream.getCost() + 3.0;
     }
 
     @Override
     public String getDescription() {
-        return "Strawberry Scoop";
+        return iceCream.getDescription() + ", Strawberry Scoop";
     }
 }
